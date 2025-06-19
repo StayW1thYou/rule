@@ -15,7 +15,7 @@ ruleset=Unmatched,[]FINAL
 
 custom_proxy_group=Foreign`select`[]AutoSelect`[]ManualSelect`[]PrivateNodes
 custom_proxy_group=ManualSelect`select`.*
-custom_proxy_group=PrivateNodes`select`(Japan|JP|Singapore|SG|新加坡|日本)
+custom_proxy_group=PrivateNodes`select`(Japan|JP|日本|Singapore|SG|新加坡)
 
 custom_proxy_group=Domestic`select`[]DIRECT`[]Foreign`[]ManualSelect
 custom_proxy_group=AI`select`[]PrivateNodes
