@@ -1,7 +1,7 @@
 [custom]
 
-ruleset=Domestic,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-ruleset=Domestic,[]GEOIP,CN
+ruleset=China,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=China,[]GEOIP,CN
 
 ruleset=AI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
 ruleset=AI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
@@ -17,7 +17,7 @@ custom_proxy_group=Foreign`select`[]AutoSelect`[]ManualSelect`[]PrivateNodes
 custom_proxy_group=ManualSelect`select`.*
 custom_proxy_group=PrivateNodes`select`(Japan|JP|日本|Singapore|SG|新加坡)
 
-custom_proxy_group=Domestic`select`[]DIRECT`[]Foreign`[]ManualSelect
+custom_proxy_group=China`select`[]DIRECT`[]Foreign`[]ManualSelect
 custom_proxy_group=AI`select`[]PrivateNodes
 custom_proxy_group=Unmatched`select`[]Foreign`[]ManualSelect
 
