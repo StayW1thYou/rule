@@ -9,19 +9,16 @@ ruleset=AI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule
 ruleset=AI,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml
 ruleset=AI,https://raw.githubusercontent.com/cutethotw/ClashRule/main/Rule/Perplexity.list
 
-ruleset=Foreign,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-
-ruleset=Unmatched,[]FINAL
+ruleset=Foreign,[]FINAL
 
 custom_proxy_group=Foreign`select`[]AutoSelect`[]ManualSelect`[]PrivateNodes
 custom_proxy_group=ManualSelect`select`.*
-custom_proxy_group=PrivateNodes`select`(Japan|JP|日本|Singapore|SG|新加坡)
+custom_proxy_group=PrivateNodes`url-test`(新加坡|坡|狮城|SG|Singapore|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)`http://www.gstatic.com/generate_204`300,,50
 
 custom_proxy_group=China`select`[]DIRECT`[]Foreign`[]ManualSelect
 custom_proxy_group=AI`select`[]PrivateNodes
-custom_proxy_group=Unmatched`select`[]Foreign`[]ManualSelect
 
-custom_proxy_group=AutoSelect`url-test`(^(?!.*(CT|CU|CM)).*)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=AutoSelect`url-test`.*`http://www.gstatic.com/generate_204`300,,50
 
 enable_rule_generator=true
 overwrite_original_rules=true
